@@ -29,14 +29,14 @@ def convert_img_to_video(input_path_, video_path ):
 
 	jpg_list = sorted(glob.glob(input_path_+"/*"))
 
-	if not jpg_list == []:
-		print(input_path_)
+	if jpg_list == []:
+		print("\n\n cannot find any imags in "+input_path_+"\n\n")
+	else:
 
 		img = []
 		for i,fi in enumerate(jpg_list):
 			print(fi)
 			img.append(cv2.imread(fi))
-			# print(img[i])
 
 		height,width,layers=img[1].shape
 		name = video_path+".mp4"
