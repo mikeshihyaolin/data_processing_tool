@@ -10,7 +10,8 @@
 + Ubuntu 
 
 ## Dependencies
-+ OpenCV 
++ OpenCV
++ ffmpeg
 
 ## Installation
 
@@ -29,7 +30,7 @@ for example:
 ```
 python img2video.py --input_img_path /example/images/ --output_video_path /example/output_video.mp4
 ```
-
+<br/><br/>
 
 + Convert video to images
 ```
