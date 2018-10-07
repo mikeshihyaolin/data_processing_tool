@@ -25,7 +25,17 @@ git clone https://github.com/mikeshihyaolin/data_processing_tool.git
 ```
 python img2video.py --input_img_path [image_path] --output_video_path [video_path]
 ```
++ example:
+```
+python img2video.py --input_img_path /example/images/ --output_video_path /example/output_video.mp4
+```
+
+
 + Convert video to images
 ```
 python video2img.py --input_video_path [video_path] --output_img_path [image_path]  
+```
++ example:
+```
+python video2img.py --input_video_path /example/input_video.mp4 --output_img_path /images/ 
 ```

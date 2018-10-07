@@ -1,5 +1,5 @@
 #########################################################################################
-# python video2img.py --input_video_path [video_path] --output_img_path [image_path].   #
+# python video2img.py --input_video_path [video_path] --output_img_path [image_path]    #
 #########################################################################################
 
 import subprocess
@@ -11,6 +11,14 @@ from os.path import isfile, isdir, join
 import time
 path_ffmpeg='ffmpeg' # for server used
 import argparse
+
+def reset(reset_path):
+    path = reset_path
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+        makedirs(path)
+    else:
+        makedirs(path)
 
 def convert_video_to_imgs(video_path, img_path):
     args = [path_ffmpeg, \
@@ -29,6 +37,7 @@ if __name__=="__main__":
 
     print("input path: "+args.input_video_path)
     print("output path: "+args.output_img_path)
+    reset(args.output_img_path)
 
     convert_video_to_imgs(args.input_video_path, args.output_img_path)
 

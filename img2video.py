@@ -14,17 +14,6 @@ import time
 import matplotlib.pyplot as plt
 # matplotlib.use("gtk")
 
-def reset(reset_path):
-    path = reset_path
-    if os.path.isdir(path):
-        shutil.rmtree(path)
-        print("remove existing "+path)
-        makedirs(path)
-        print("create folder: "+path)
-    else:
-        makedirs(path)
-        print("create foder: "+path)
-
 def convert_img_to_video(input_path_, video_path ):
 
 	jpg_list = sorted(glob.glob(input_path_+"/*"))
