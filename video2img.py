@@ -29,8 +29,8 @@ def convert_video_to_imgs(video_path, img_path):
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_video_path", type=str)
-    parser.add_argument("--output_img_path", type=str)
+    parser.add_argument("--input_video_path","-i", type=str)
+    parser.add_argument("--output_img_path", "-o", type=str)
     args = parser.parse_args()
 
     start = time.time()
