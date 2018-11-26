@@ -1,4 +1,4 @@
-# PD Pose Grading
+# Basic data processing script
 
 + Convert images to video
 + Convert video to images
