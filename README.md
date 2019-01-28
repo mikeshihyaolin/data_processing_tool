@@ -1,4 +1,4 @@
-# Basic data processing script
+# Basic data processing scripts
 
 + Convert images to video
 + Convert video to images
@@ -24,19 +24,19 @@ git clone https://github.com/mikeshihyaolin/data_processing_tool.git
 ## Quick Start
 + Convert images to videos
 ```
-python img2video.py --input_img_path [image_path] --output_video_path [video_path]
+python img2video.py -i [image_path] -o [video_path]
 ```
 for example:
 ```
-python img2video.py --input_img_path /example/images/ --output_video_path /example/output_video.mp4
+python img2video.py -i /example/images/ -o /example/output_video.mp4
 ```
 <br/><br/>
 
 + Convert video to images
 ```
-python video2img.py --input_video_path [video_path] --output_img_path [image_path]  
+python video2img.py -i [video_path] -o [image_path]  
 ```
 for example:
 ```
-python video2img.py --input_video_path /example/input_video.mp4 --output_img_path /images/ 
+python video2img.py -i /example/input_video.mp4 -o /images/ 
 ```
