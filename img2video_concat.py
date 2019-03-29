@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-# @file   tremor_detection.py
+# @file   img2video_concat.py
 # @author Shih-Yao (Mike) Lin
 # @email  shihyaolin@tencent.com
 # @date   2019-03-20
