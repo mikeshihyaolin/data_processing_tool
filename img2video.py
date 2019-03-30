@@ -18,7 +18,7 @@ import time
 import matplotlib.pyplot as plt
 # matplotlib.use("gtk")
 
-def convert_img_to_video(input_path_, video_path ):
+def convert_img_to_video(input_path_, video_path, fps):
 
 	jpg_list = sorted(glob.glob(input_path_+"/*"))
 
@@ -36,7 +36,7 @@ def convert_img_to_video(input_path_, video_path ):
 		# name = name.replace(" ","")
 		# print(name)
 		fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-		video = cv2.VideoWriter(name, fourcc, 20.0, (width,height))
+		video = cv2.VideoWriter(name, fourcc, float(fps), (width,height))
 
 		for i, fi in enumerate(img):
 			video.write(fi)
@@ -47,14 +47,16 @@ if __name__=="__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--input_img_path", "-i", type=str)
 	parser.add_argument("--output_video_path", "-o", type=str)
+	parser.add_argument("--frame_rate", "-fps", type=str, default="20.0")
 	args = parser.parse_args()
 
 	start = time.time()
 
 	print("input path: "+args.input_img_path)
 	print("output path: "+args.output_video_path)
+	print("fps: "+args.frame_rate)
 
-	convert_img_to_video(args.input_img_path, args.output_video_path)
+	convert_img_to_video(args.input_img_path, args.output_video_path, args.frame_rate)
 
 	end = time.time()
 	elapsed = end - start

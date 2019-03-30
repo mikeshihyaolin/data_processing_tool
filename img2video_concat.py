@@ -18,7 +18,7 @@ import time
 import matplotlib.pyplot as plt
 # matplotlib.use("gtk")
 
-def convert_img_to_video(input_path, video_path ):
+def convert_img_to_video(input_path, video_path, fps):
 
 	path_list = []
 	img_list = []
@@ -59,7 +59,7 @@ def convert_img_to_video(input_path, video_path ):
 
 
 	fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-	video = cv2.VideoWriter(video_path, fourcc, 20.0, (w_tmp,h_))
+	video = cv2.VideoWriter(video_path, fourcc, float(fps), (w_tmp,h_))
 
 	# image resizing and video producing
 	for i in range(nb_frames):
@@ -78,19 +78,18 @@ if __name__=="__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--input_img_path", "-i", type=str)
 	parser.add_argument("--output_video_path", "-o", type=str)
+	parser.add_argument("--frame_rate", "-fps", type=str, default="20.0")
 	args = parser.parse_args()
 
 	start = time.time()
 
-	print("input path: "+args.input_img_path)
-
 	str_list = args.input_img_path.split(" ")
-
 	for i, f in enumerate(str_list):
 		print("input path: "+f)
 	print("output path: "+args.output_video_path)
+	print("fps: "+args.frame_rate)
 
-	convert_img_to_video(args.input_img_path, args.output_video_path)
+	convert_img_to_video(args.input_img_path, args.output_video_path, args.frame_rate)
 
 	end = time.time()
 	elapsed = end - start
