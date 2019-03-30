@@ -42,10 +42,11 @@ for example:
 ```
 python img2video.py -i /example/images/ -o /example/output_video.mp4
 ```
+<br/><br/>
 
 + Convert and concatenate multimple input images to a video
 ```
-python img2video_concat.py -i "[image_path1] ... [image_path N] --output_video_path" -o [video_path]
+python img2video_concat.py -i "[image_path1] [image_path 2] ... [image_path N]" -o [video_path]
 ```
 
 <br/><br/>
