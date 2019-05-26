@@ -46,11 +46,6 @@ for example:
 python video2gif.py -i /example/input_video.mp4 -o /gif/output_gif.gif
 ```
 
-for example:
-```
-python video2img.py -i /example/input_video.mp4 -o /images/ 
-```
-
 + Convert images to a video
 ```
 python img2video.py -i [image_path] -o [video_path]
