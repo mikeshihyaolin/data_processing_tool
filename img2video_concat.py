@@ -3,7 +3,7 @@
 # @author Shih-Yao (Mike) Lin
 # @email  shihyaolin@tencent.com
 # @date   2019-03-20
-# @brief  generate video from multi-inputs images
+# @brief  generate a video from multi-inputs images
 # @usage  python3 img2video_concat.py --input_img_path "[image_path 1] [image_path 2] ... [image_path N]" --output_video_path [video_path]
 
 import cv2
