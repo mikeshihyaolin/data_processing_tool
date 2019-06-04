@@ -4,7 +4,7 @@
 + Convert a video to a gif file
 + Convert images to a video
 + Convert and concatenate multimple input images to a video
-
++ Flip images
 
 **Code Author: Shih-Yao (Mike) Lin**
 
@@ -21,8 +21,21 @@
 ```bash
 git clone https://github.com/mikeshihyaolin/data_processing_tool.git
 ```
+The directory tree should look like this:
+```
+${ROOT}
+├── README.md
+├── flip_imgs.py
+├── img2video.py
+├── img2video_concat.py
+├── requirements.txt
+├── video2gif.py
+├── video2img.py
+└── videos2concated_video.py
+```
 
-* Setup Dependencies
+
+* Install dependencies
 ```
 pip3 install -r ./requirements.txt
 ```
