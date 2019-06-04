@@ -63,7 +63,7 @@ python flip_imgs.py --input_img_path [image_path] \
 			--output_flipped_img_folder [output_image_folder] 
 
 ```
-From left to right: original image, [horizontal=1, vertical=0], [horizontal=1, vertical=1], [horizontal=1, vertical=1] \
+From left to right: original image, [horizontal=1, vertical=0], [horizontal=0, vertical=1], [horizontal=1, vertical=1] \
 ![original image](figs/cat_example.jpg)
 ![](figs/flip_hf1vf0.jpg)
 ![](figs/flip_hf0vf1.jpg)
