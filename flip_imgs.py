@@ -4,7 +4,9 @@
 # @email  shihyaolin@tencent.com
 # @date   2019-05-30
 # @brief  flip images
-# @usage  python3 flip_imgs.py --input_img_path [image_path] --output_flipped_img_folder [output_image_folder]
+# @usage  python3 flip_imgs.py --input_img_path [image_path] \
+# 						--horizontal [1/0] --vertical [0/1] \
+#						--output_flipped_img_folder [output_image_folder] 
 
 import cv2
 import pickle
