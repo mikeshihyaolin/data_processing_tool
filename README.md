@@ -25,6 +25,11 @@ The directory tree should look like this:
 ```
 ${ROOT}
 ├── README.md
+├── figs
+│   ├── cat_example.jpg
+│   ├── flip_hf0vf1.jpg
+│   ├── flip_hf1vf0.jpg
+│   └── flip_hf1vf1.jpg
 ├── flip_imgs.py
 ├── img2video.py
 ├── img2video_concat.py
@@ -59,8 +64,8 @@ python img2video_concat.py -i "[image_path1] [image_path 2] ... [image_path N]" 
 + Flip all the images in a folder
 ```
 python flip_imgs.py --input_img_path [image_path] \
-			--horizontal [1 or 0] --vertical [0 or 1] \
-			--output_flipped_img_folder [output_image_folder] 
+		--horizontal [1 or 0] --vertical [0 or 1] \
+		--output_flipped_img_folder [output_image_folder] 
 
 ```
 From left to right: original image, [horizontal=1, vertical=0], [horizontal=0, vertical=1], [horizontal=1, vertical=1] \
