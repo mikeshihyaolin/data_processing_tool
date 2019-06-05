@@ -63,10 +63,8 @@ python img2video_concat.py -i "[image_path1] [image_path 2] ... [image_path N]" 
 ```
 + Flip all the images in a folder
 ```
-python flip_imgs.py -i [image_path] \
+python flip_imgs.py -i [image_folder] -o [output_image_folder] 
 		-hf [1 or 0] -vf [0 or 1] \
-		-o [output_image_folder] 
-
 ```
 From left to right: original image, [hf=1, vf=0], [hf=0, vf=1], [hf=1, vef=1] \
 ![original image](figs/cat_example.jpg)
