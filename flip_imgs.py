@@ -5,8 +5,8 @@
 # @date   2019-05-30
 # @brief  flip all the images in a folder
 # @usage  python3 flip_imgs.py --input_img_path [image_path] \
-# 						--horizontal [1/0] --vertical [0/1] \
-#						--output_flipped_img_folder [output_image_folder] 
+#					--horizontal [1/0] --vertical [0/1] \
+#					--output_flipped_img_folder [output_image_folder] 
 
 import cv2
 import pickle
@@ -38,7 +38,6 @@ def flip_imgs(input_img_path, output_folder, h_flip, v_flip):
 	if img_list == []:
 		print("\n\n cannot find any imags in "+input_img_path+"\n\n")
 	else:
-
 		img = []
 		for i,fi in enumerate(img_list):
 			print(fi)
