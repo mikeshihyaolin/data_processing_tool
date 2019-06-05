@@ -1,12 +1,12 @@
 # Basic data processing scripts 
+**Code Author: Shih-Yao (Mike) Lin**
 
+## Features
 + Convert a video to images
 + Convert a video to a gif file
 + Convert images to a video
 + Convert and concatenate multimple input images to a video
 + Flip images
-
-**Code Author: Shih-Yao (Mike) Lin**
 
 ## Dependencies
 + python3.6
@@ -44,7 +44,7 @@ ${ROOT}
 pip3 install -r ./requirements.txt
 ```
 
-## Quick Start
+## Usages
 + Convert a video to images
 ```
 python video2img.py -i [video_path] -o [image_path]  
