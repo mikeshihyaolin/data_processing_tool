@@ -65,7 +65,7 @@ def convert_img_to_video(input_path, video_path, fps):
 	for i in range(nb_frames):
 		img = []
 		for j in range(nb_inputs):
-			img_list[i][j]= cv2.resize(img_list[i][j],(int(new_w_list[j]),int(new_h_list[j])))
+			img_list[i][j]= cv2.resize(img_list[i][j],(int(new_w_list[j]),int(h_)))
 			if j ==0:
 				img = img_list[i][j]
 			else:
