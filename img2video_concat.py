@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 # @file   img2video_concat.py
 # @author Shih-Yao (Mike) Lin
-# @email  shihyaolin@tencent.com
+# @email  mike.lin@ieee.org
 # @date   2019-03-20
 # @brief  generate a video from multi-inputs images
 # @usage  python3 img2video_concat.py --input_img_path "[image_path 1] [image_path 2] ... [image_path N]" --output_video_path [video_path]
@@ -35,13 +35,15 @@ def convert_img_to_video(input_path, video_path, fps):
 		path_list.append(sorted(glob.glob(f+"/*")))
 		nb_inputs = nb_inputs + 1
 	nb_frames = len(path_list[0])
+	print(len(path_list[0]))
+	print(len(path_list[1]))
 
 	# load images
 	# note: img_list[frame_index][input_image_index]
 	for i in range(nb_frames):
 		tmp_list = []
 		for j in range(nb_inputs):
-			# print(path_list[j][i])
+			print(path_list[j][i])
 			tmp_list.append(cv2.imread(path_list[j][i]))
 		img_list.append(tmp_list)
 

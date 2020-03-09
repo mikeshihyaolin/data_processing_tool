@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 # @file   video2gif.py
 # @author Shih-Yao (Mike) Lin
-# @email  shihyaolin@tencent.com
+# @email  mike.lin@ieee.org
 # @date   2019-05-23
 # @brief  convert a video to a gif file
 # @usage  python video2gif.py --input_video_path [video_path] --output_gif_path [gif_path] --size [ratio]   
@@ -25,8 +25,8 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_video_path","-i", type=str)
     parser.add_argument("--output_gif_path", "-o", type=str, default="./output.gif")
-    parser.add_argument("--start_time", "-ts", type=str, default=None)
-    parser.add_argument("--end_time", "-te", type=str, default=None)
+    parser.add_argument("--start_time", "-ts", type=int, default=None)
+    parser.add_argument("--end_time", "-te", type=int, default=None)
     parser.add_argument("--size", "-s", type=str, default=0.5)
     args = parser.parse_args()
 

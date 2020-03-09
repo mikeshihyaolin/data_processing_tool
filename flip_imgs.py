@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 # @file   img_flip.py
 # @author Shih-Yao (Mike) Lin
-# @email  shihyaolin@tencent.com
+# @email  mike.lin@ieee.org
 # @date   2019-05-30
 # @brief  flip all the images in a folder
 # @usage  python3 flip_imgs.py --input_img_path [image_path] \

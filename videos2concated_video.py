@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 # @file   img2video_concat.py
 # @author Shih-Yao (Mike) Lin
-# @email  shihyaolin@tencent.com
+# @email  mike.lin@ieee.org
 # @date   2019-05-29
 # @brief  generate a video by concatenating multi videos
 # @usage  python3 videos2concated_video.py --input_video_path "[video_path 1] [video_path 2] ... [video_path N]" --output_video_path [concated_video_path]

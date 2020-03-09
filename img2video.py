@@ -1,7 +1,7 @@
 # -*-coding:utf-8-*-
 # @file   img2video.py
 # @author Shih-Yao (Mike) Lin
-# @email  shihyaolin@tencent.com
+# @email  mike.lin@ieee.org
 # @date   2019-03-20
 # @brief  generate video from multi-inputs images
 # @usage  python img2video.py --input_img_path [image_path] --output_video_path [video_path]    
