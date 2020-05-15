@@ -15,7 +15,7 @@ import os, sys
 from os import listdir, makedirs
 import shutil
 import time
-import matplotlib.pyplot as plt
+from tqdm import tqdm
 # matplotlib.use("gtk")
 
 def convert_img_to_video(input_path_, video_path, fps):
@@ -27,8 +27,8 @@ def convert_img_to_video(input_path_, video_path, fps):
 	else:
 
 		img = []
-		for i,fi in enumerate(jpg_list):
-			print(fi)
+		for fi in tqdm(jpg_list):
+			# print(fi)
 			img.append(cv2.imread(fi))
 
 		height,width,layers=img[1].shape
